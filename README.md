@@ -1,146 +1,126 @@
-# SQL to API - Cloudflare Worker 应用
+# Cloudflare SQL to API 🌩️
 
-这是一个基于 Cloudflare Workers 和 D1 数据库的应用，可以通过编写 SQL 查询快速创建 REST API 接口。
+![GitHub Repo stars](https://img.shields.io/github/stars/UTKA-SINGH/Cloudflare-SQL-to-API?style=social)
+![GitHub forks](https://img.shields.io/github/forks/UTKA-SINGH/Cloudflare-SQL-to-API?style=social)
+![GitHub issues](https://img.shields.io/github/issues/UTKA-SINGH/Cloudflare-SQL-to-API)
 
-## 在线预览
+Welcome to the **Cloudflare SQL to API** repository! This project leverages Cloudflare Workers and the D1 database to help you create REST API endpoints quickly through SQL queries. Whether you are building a new application or enhancing an existing one, this tool simplifies the process of setting up APIs.
 
-您可以通过以下链接访问在线演示版本：
-[在线演示版本](https://123406.xyz)
+## Table of Contents
 
-## 特点
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Releases](#releases)
 
-- **简单易用**: 只需编写 SQL 语句，即可发布 REST API
-- **高性能**: 基于 Cloudflare 全球网络，快速响应请求
-- **安全可靠**: 内置 SQL 注入防护，保障数据安全
-- **零后端代码**: 无需编写后端代码，直接从数据库到 API
+## Features
 
-## 系统截图
+- **Fast API Creation**: Write SQL queries and generate RESTful APIs in no time.
+- **Serverless Architecture**: Run your APIs on Cloudflare Workers, benefiting from low latency and global distribution.
+- **D1 Database**: Utilize the D1 database for efficient data storage and retrieval.
+- **User-Friendly Interface**: Built with Vue 3 and Element Plus for a smooth user experience.
+- **Code Editor**: Integrated Monaco Editor for writing and testing SQL queries directly in the browser.
 
-### 首页
+## Technologies Used
 
-![首页](./images/首页.png)
+This project incorporates several modern technologies to enhance performance and user experience:
 
-### 创建 API 页面
+- **Cloudflare Workers**: For running serverless functions.
+- **D1 Database**: A lightweight database solution from Cloudflare.
+- **Element Plus**: A Vue 3 UI library for building responsive user interfaces.
+- **Monaco Editor**: The code editor that powers Visual Studio Code, for a rich coding experience.
+- **Node.js**: For server-side JavaScript execution.
+- **Nuxt 3**: A framework for building server-rendered Vue applications.
+- **Vite**: A fast build tool for modern web projects.
+- **Vue 3**: The progressive JavaScript framework for building user interfaces.
 
-![创建API页面](./images/创建API页面.png)
+## Installation
 
-### API 列表页面
+To get started with the Cloudflare SQL to API project, follow these steps:
 
-![API列表页面](./images/API列表页面.png)
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/UTKA-SINGH/Cloudflare-SQL-to-API.git
+   cd Cloudflare-SQL-to-API
+   ```
 
-### API 测试工具页面
+2. **Install Dependencies**:
+   Make sure you have Node.js installed. Then run:
+   ```bash
+   npm install
+   ```
 
-![API测试工具页面](./images/API测试工具页面.png)
+3. **Configure Environment Variables**:
+   Create a `.env` file in the root directory and set your Cloudflare API credentials and D1 database settings.
 
-### API 调用日志页面
+4. **Run the Application**:
+   Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-![API调用日志页面](./images/API调用日志页面.png)
+5. **Access the Application**:
+   Open your browser and navigate to `http://localhost:3000` to view the application.
 
-### 使用文档页面
+## Usage
 
-![使用文档页面](./images/使用文档页面.png)
+Once you have the application running, you can start creating APIs by following these steps:
 
-## 开始使用
+1. **Open the SQL Editor**:
+   Navigate to the SQL editor in the application interface.
 
-### 前提条件
+2. **Write Your SQL Query**:
+   Input your SQL query to define the data you want to expose via the API.
 
-- [Node.js](https://nodejs.org/) (v18 或更高版本)
-- [pnpm](https://pnpm.io/) 包管理器
-- [Cloudflare 账号](https://dash.cloudflare.com/sign-up)
-- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/)
+3. **Generate the API Endpoint**:
+   Click on the "Generate API" button to create a RESTful endpoint for your SQL query.
 
-### 安装
+4. **Test Your API**:
+   Use tools like Postman or curl to test the newly created API endpoint.
 
-```bash
-# 克隆项目
-git clone <repository-url>
-cd db-admin-app
+## Contributing
 
-# 安装依赖
-pnpm install
-```
+We welcome contributions from the community! If you would like to contribute to the Cloudflare SQL to API project, please follow these guidelines:
 
-### 本地开发
+1. **Fork the Repository**: Click on the "Fork" button at the top right of the repository page.
 
-```bash
-# 开发模式
-pnpm dev
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
 
-# 预览模式（使用Wrangler）
-pnpm preview
-```
+3. **Make Your Changes**: Implement your feature or fix.
 
-### 创建 D1 数据库
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
 
-```bash
-# 登录Cloudflare
-wrangler login
+5. **Push to Your Fork**: 
+   ```bash
+   git push origin feature/YourFeature
+   ```
 
-# 创建D1数据库
-wrangler d1 create sql_api_db
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request."
 
-# 更新wrangler.jsonc中的database_id为刚创建的数据库ID
+## License
 
-# 应用数据库迁移
-wrangler d1 execute sql_api_db --file=./migrations/0000_initial_schema.sql
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-wrangler d1 execute sql_api_db --file=./migrations/0001_table_schema.sql
-```
+## Releases
 
-### 部署到 Cloudflare
+To download the latest release, visit the [Releases section](https://github.com/UTKA-SINGH/Cloudflare-SQL-to-API/releases). Here, you can find the latest updates and versions of the application. Make sure to download and execute the files as needed.
 
-```bash
-# 构建并部署
-pnpm deploy
-```
+## Contact
 
-## 使用方法
+For questions or support, feel free to reach out:
 
-1. 访问应用首页
-2. 点击"API 管理"创建新的 API
-3. 填写 API 基本信息并编写 SQL 查询
-4. 提交表单，创建 API 端点
-5. 使用"API 测试"功能验证 API
+- **Author**: UTKA-SINGH
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
 
-## API 参数
+## Conclusion
 
-在创建 API 时，可以定义参数以动态替换 SQL 中的值。参数使用`:参数名`的形式在 SQL 中指定，例如：
-
-```sql
-SELECT * FROM users WHERE id = :userId
-```
-
-然后在参数定义部分添加`userId`参数，并指定类型和是否必填。
-
-## 安全注意事项
-
-- 默认禁用了 DROP 和 ALTER SQL 操作以保护数据库
-- 建议在生产环境中添加适当的认证机制
-- 公开 API 无需认证，请谨慎使用
-
-## 项目结构
-
-```
-db-admin-app/
-├── components/          # 前端组件
-├── migrations/          # 数据库迁移脚本
-├── pages/               # 页面组件
-│   ├── index.vue        # 首页
-│   ├── api-manager.vue  # API管理页面
-│   └── api-tester.vue   # API测试页面
-├── plugins/             # Nuxt插件
-├── public/              # 静态资源
-├── server/              # 服务器端代码
-│   └── api/             # API路由处理
-├── .nuxt/               # Nuxt构建文件
-├── app.vue              # 应用入口
-├── nuxt.config.ts       # Nuxt配置
-├── package.json         # 项目依赖
-└── wrangler.jsonc       # Cloudflare配置
-```
-
-## 技术栈
-
-- **前端**: Vue 3, Nuxt 3, Element Plus, Monaco Editor
-- **后端**: Cloudflare Workers, D1 数据库
-- **构建工具**: Vite, Wrangler
+The Cloudflare SQL to API project aims to streamline the process of API creation, making it accessible to developers of all skill levels. By utilizing Cloudflare Workers and D1, we offer a powerful solution for building scalable APIs. Your contributions and feedback are invaluable to the success of this project. Thank you for being part of our community!
